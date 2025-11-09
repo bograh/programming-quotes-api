@@ -6,7 +6,7 @@ const router = new Router();
 import cors from "@koa/cors";
 
 router.get(
-  `/${path.basename(__filename, path.extname(__filename))}`, cors(),
+  `/api/${path.basename(__filename, path.extname(__filename))}`, cors(),
   async (ctx) => {
     const {
       query: { author },
